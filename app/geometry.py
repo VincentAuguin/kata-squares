@@ -95,24 +95,6 @@ class SquareFactory(object):
 
         return s
 
-    '''
-    @staticmethod
-    def build(p1,p2,p3,p4):
-        square = Square()
-        square.points = [p1,p2,p3,p4]
-
-        if not SquareFactory.is_square(square):
-            raise Exception('The 4 given points do not form a square')
-
-        # For 2 segments starting from the same points,
-        # there is a segment that is the side of the square.
-        # We take the minimum because it may be the diagonal
-        # of the square.
-        square.side = min([Point2.distance(p1,p2) , Point2.distance(p1,p3)])
-
-        return square
-    '''
-
     @staticmethod
     def is_square(square):
         # Must have 4 points

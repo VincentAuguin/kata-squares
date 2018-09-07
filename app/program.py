@@ -57,8 +57,7 @@ def compute(points):
 if __name__ == '__main__':
     f = open("data/out.txt", "w")
     # get points
-    points = get_points('data/points.txt')
-    #points = [Point2(-5,3), Point2(-3,7), Point2(-2,4), Point2(-6,6)]
+    points = get_points('data/points_less.txt')
     # Remove duplicate points
     points = list(set(points))
     print('{0} points to compute'.format(len(points)))
