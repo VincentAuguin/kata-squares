@@ -1,9 +1,13 @@
 # RUN
-```cd app/```
-
-```python program.py```
+```
+cd app/
+python program.py
+```
 
 # TEST
-```cd app/```
+If ```nosetests``` is not install : ```pip install nosetests```
 
-```nosetests ../test/```
+```
+cd app/
+nosetests ../test/
+```
